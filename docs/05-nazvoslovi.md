@@ -1,63 +1,51 @@
-# Názvosloví assetů
+# Názvosloví – Dračí akademie
 
-## Formát názvu souboru
+## Slovník pojmů projektu
 
-```
-[popis-kebab-case].[ext]
-```
-
-Příklady:
-- `hero-akademie.jpg`
-- `dragon-emblem.png`
-- `cesta-prvni-figurky.svg`
-
-## Struktura URL
-
-```
-https://assets.draciakademie.cz/images/[sekce]/[složka]/[soubor].[ext]
-```
-
-Příklady:
-```
-https://assets.draciakademie.cz/images/akademie/hero/hero-akademie.jpg
-https://assets.draciakademie.cz/images/global/logo/dragon-emblem.png
-https://assets.draciakademie.cz/images/kurzy/stezky/draci-trenink.svg
-```
-
-## Sekce
-
-| Sekce | Popis |
+| Pojem | Definice |
 |---|---|
-| `global` | Logo, pozadí, ozdoby, ikony, textury |
-| `akademie` | Hlavní landing page |
-| `zacni-tady` | Průvodce pro nováčky |
-| `kurzy` | Kurzy a stezky |
-| `deti-a-rodice` | Věkové skupiny a produkty pro rodiny |
-| `skoly-a-ucitele` | Školy a vzdělávací programy |
-| `komunita` | Discord, galerie, výzvy |
-| `akce` | Workshopy a akce |
-| `obchod` | Produkty, balíčky, členství |
-| `reference` | Hodnocení a galerie prací |
-| `lektori` | Portréty a ukázky prací lektorů |
-| `o-nas` | Mise, tým, partneři |
-| `kontakt` | Kontaktní ikony |
+| **Dračí akademie** | Celý projekt a ekosystém. Kreativně-vzdělávací, komunitní a produktová platforma Valiente Projectu. |
+| **Dračí stezka** | Vzdělávací cesta tvůrce. Série kurzů a výzev s progresí a odznaky. |
+| **Dračí kruh** | Komunita tvůrců – Discord server + členství. Sdílení prací, výzvy, role. |
+| **První plamen** | Vstupní kurz pro úplné začátečníky. „Cesta k první figurce." |
+| **Dračí zásilka** | Odběr fyzických modelů a startovacích balíčků doručovaných domů. |
+| **Alchymie barev** | Nauka o barvách, světle, stínu a efektech. Název pro sekci/kurz. |
+| **Projektová dílna** | Pokročilá stezka pro vytváření diorám a složitých projektů. |
+| **Strážce akademie** | Lektor nebo průvodce v akademii. Ne „učitel", ne „trenér". |
+| **Valiente styl** | Charakteristický vizuální a komunikační styl celého projektu. |
+| **Valiente Project** | Zastřešující projekt / brand. Dračí akademie je jeho součástí. |
 
-## Formáty
+## Konvence pojmenování souborů
 
-| Formát | Použití |
+```
+hero-akademie.jpg         ✅
+hero-kurzy.png            ✅
+card-prvni-figurka.webp   ✅
+bg-textura-drevo.png      ✅
+icon-drak.svg             ✅
+
+Dračí akademie FINÁLNÍ.png   ❌
+Obrázek 1.png                ❌
+IMG_1234.jpg                 ❌
+hero final v3 (1).png        ❌
+```
+
+**Pravidla:**
+- malá písmena
+- bez diakritiky
+- pomlčky místo mezer a podtržítek
+- jasný popis obsahu
+- verze pouze v nutných případech (`hero-akademie-v2.jpg`)
+
+## Prefixy souborů
+
+| Prefix | Použití |
 |---|---|
-| `.jpg` | Fotografie, hero obrázky |
-| `.png` | Loga, transparentní prvky |
-| `.svg` | Ilustrace, ikony, vektory |
-| `.webp` | Optimalizované fotky (budoucnost) |
-
-## Rozměry
-
-| Typ | Rozměr |
-|---|---|
-| Hero full | 1920×1080 px |
-| Hero sekce | 1200×600 px |
-| Karta kurzu | 480×320 px |
-| Portrét lektora | 400×500 px |
-| Ikona | 64×64 px |
-| Logo | původní, min. 200px |
+| `hero-` | Hlavní obrázek sekce nebo stránky |
+| `card-` | Obrázek karty (kurz, produkt, člen) |
+| `bg-` | Pozadí nebo textura |
+| `icon-` | Ikona |
+| `portrait-` | Portrét lektora nebo člena |
+| `product-` | Produktový obrázek |
+| `gallery-` | Obrázek galerie nebo výsledku |
+| `logo-` | Logo nebo emblem |

@@ -1,0 +1,16 @@
+export const altTexts: Record<string, string> = {
+  'hero-akademie':       'Dračí akademie jako kreativní vzdělávací prostor pro děti a dospělé',
+  'hero-zacni-tady':     'Malý dračí průvodce ukazuje návštěvníkovi cestu do Dračí akademie',
+  'hero-kurzy':          'Mapa dračí stezky s kurzy a úrovněmi Dračí akademie',
+  'hero-deti-a-rodice':  'Rodič a dítě tvoří společně u pracovního stolu',
+  'hero-skoly-a-ucitele':'Děti tvoří společně ve školním workshopu Dračí akademie',
+  'hero-komunita':       'Komunita Dračí akademie tvoří společně u jednoho stolu',
+  'hero-akce':           'Workshop Dračí akademie – skupinové tvoření figurek',
+  'hero-obchod':         'Startovací balíčky, figurky, štětce a barvy Dračí akademie',
+  'hero-reference':      'Galerie prací tvůrců z Dračí akademie',
+  'hero-lektori':        'Tým lektorů Dračí akademie',
+  'hero-o-nas':          'Ateliér Valiente Projectu a zakladatel Dračí akademie',
+  'hero-kontakt':        'Dračí posel přináší zprávu pro tým Dračí akademie',
+  'dragon-emblem':       'Dračí akademie – logo',
+  'pro-rodice':          'Rodič a dítě tvoří společně figurky u pracovního stolu',
+}

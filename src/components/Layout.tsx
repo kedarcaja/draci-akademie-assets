@@ -10,40 +10,39 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen bg-brand-dark flex flex-col">
-      {/* Top nav */}
       <header className="border-b border-brand-border bg-brand-darker sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 flex items-center gap-6 h-14">
-          <div className="flex items-center gap-2 mr-4">
+        <div className="max-w-7xl mx-auto px-4 flex items-center gap-2 h-14">
+          <div className="flex items-center gap-2 mr-4 shrink-0">
             <img
               src="/images/global/logo/dragon-emblem.png"
               alt="logo"
               className="w-7 h-7 object-contain"
               onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
             />
-            <span className="font-cinzel text-brand-gold font-bold text-sm tracking-widest uppercase">
+            <span className="font-cinzel text-brand-gold font-bold text-sm tracking-widest uppercase hidden sm:block">
               Dračí akademie
             </span>
-            <span className="text-brand-text-dim text-xs ml-1">· assets</span>
+            <span className="text-brand-text-dim text-xs">· assets</span>
           </div>
 
-          <nav className="flex items-center gap-1">
+          <nav className="flex items-center gap-1 overflow-x-auto">
             {navItems.map(({ label, view: v, icon }) => (
               <button
                 key={v}
                 onClick={() => setView(v)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 text-sm rounded-sm transition-all duration-150 ${
+                className={`flex items-center gap-1.5 px-3 py-1.5 text-xs sm:text-sm rounded-sm transition-all duration-150 whitespace-nowrap ${
                   view === v
                     ? 'bg-brand-gold/15 text-brand-gold border border-brand-gold/30'
                     : 'text-brand-text-muted hover:text-brand-text border border-transparent'
                 }`}
               >
                 <span>{icon}</span>
-                {label}
+                <span className="hidden sm:block">{label}</span>
               </button>
             ))}
           </nav>
 
-          <div className="ml-auto text-[11px] text-brand-text-dim">
+          <div className="ml-auto text-[11px] text-brand-text-dim shrink-0 hidden md:block">
             assets.draciakademie.cz
           </div>
         </div>
