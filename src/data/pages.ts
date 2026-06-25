@@ -173,37 +173,6 @@ export const pages: Page[] = [
     visualMetaphor: 'Dračí pošta — přátelský a přístupný kontaktní bod',
     whatDoesNotBelong: ['Sales obsah', 'Kurzy a ceny', 'Discord link'],
   },
-  // Podpůrné stránky (v patičce nebo jako podpůrné odkazy)
-  {
-    id: 'akce',
-    title: 'Akce a workshopy',
-    slug: '/akce',
-    url: `${BASE}/akce`,
-    status: 'planned',
-    purpose: 'Přehled nadcházejících akcí — workshopy, paintzóny, výzvy a Golden Goblin turnaj.',
-    cta: 'Zobrazit akce',
-    imageFolder: 'public/images/akce/',
-  },
-  {
-    id: 'reference',
-    title: 'Reference',
-    slug: '/reference',
-    url: `${BASE}/reference`,
-    status: 'planned',
-    purpose: 'Recenze, fotky prací a příběhy tvůrců. Buduje důvěru a ukazuje reálné výsledky.',
-    cta: 'Přečíst příběhy',
-    imageFolder: 'public/images/reference/',
-  },
-  {
-    id: 'lektori',
-    title: 'Lektoři',
-    slug: '/lektori',
-    url: `${BASE}/lektori`,
-    status: 'planned',
-    purpose: 'Tým a průvodci akademie — kdo stojí za Dračí akademií a jaké mají zkušenosti.',
-    cta: 'Poznat tým',
-    imageFolder: 'public/images/lektori/',
-  },
 ]
 
 export const statusColors: Record<PageStatus, string> = {

@@ -135,17 +135,6 @@ export const campusBuildings: CampusBuilding[] = [
     microcopy: 'Vybav svoji dílnu. Začni tam, kde si to snadno dovolit.',
   },
   {
-    id: 'sin-hrdinu',
-    title: 'Síň hrdinů',
-    subtitle: 'Galerie, reference a příběhy',
-    description: 'Reálné práce, příběhy tvůrců a recenze. Ukazuje, co je skutečně možné — od první figurky po mistrovské kousky.',
-    linkedPage: 'reference',
-    type: 'page',
-    imagePath: '/images/kampus/budovy/sin-hrdinu.png',
-    icon: '🏆',
-    microcopy: 'Každý obraz v galerii začal jako první pokus.',
-  },
-  {
     id: 'atelier-valiente',
     title: 'Ateliér Valiente',
     subtitle: 'Příběh, mise a tým',

@@ -98,16 +98,6 @@ export const assets: Asset[] = [
     folder: 'hero',
   },
   {
-    id: 'hero-akce',
-    name: 'Hero – Akce',
-    localPath: 'public/images/akce/hero/hero-akce.png',
-    publicUrl: `${CDN}/images/akce/hero/hero-akce.png`,
-    alt: 'Workshop Dračí akademie – skupinové tvoření figurek ve velké dílně',
-    status: 'missing',
-    section: 'akce',
-    folder: 'hero',
-  },
-  {
     id: 'hero-obchod',
     name: 'Hero – Obchod',
     localPath: 'public/images/obchod/hero/hero-obchod.png',
@@ -115,26 +105,6 @@ export const assets: Asset[] = [
     alt: 'Tržiště akademie – startovací balíčky, figurky, štětce a barvy na fantasy pultu',
     status: 'missing',
     section: 'obchod',
-    folder: 'hero',
-  },
-  {
-    id: 'hero-reference',
-    name: 'Hero – Reference',
-    localPath: 'public/images/reference/hero/hero-reference.png',
-    publicUrl: `${CDN}/images/reference/hero/hero-reference.png`,
-    alt: 'Galerie prací tvůrců z Dračí akademie – od začátečníků po mistry',
-    status: 'missing',
-    section: 'reference',
-    folder: 'hero',
-  },
-  {
-    id: 'hero-lektori',
-    name: 'Hero – Lektoři',
-    localPath: 'public/images/lektori/hero/hero-lektori.png',
-    publicUrl: `${CDN}/images/lektori/hero/hero-lektori.png`,
-    alt: 'Tým lektorů Dračí akademie v ateliéru u pracovního stolu',
-    status: 'missing',
-    section: 'lektori',
     folder: 'hero',
   },
   {
@@ -213,8 +183,7 @@ export const assets: Asset[] = [
 
 export const sections = [
   'global', 'kampus', 'akademie', 'zacni-tady', 'stezky', 'deti-a-rodice',
-  'skoly-a-ucitele', 'komunita', 'akce', 'obchod', 'reference',
-  'lektori', 'o-nas', 'kontakt',
+  'skoly-a-ucitele', 'komunita', 'obchod', 'o-nas', 'kontakt',
 ]
 
 export const statusColors: Record<AssetStatus, string> = {

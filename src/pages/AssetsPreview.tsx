@@ -13,10 +13,7 @@ const folderTree = [
   { section: 'deti-a-rodice',   folders: ['hero', 'age-groups', 'benefits', 'products'] },
   { section: 'skoly-a-ucitele', folders: ['hero', 'workshops', 'materials'] },
   { section: 'komunita',        folders: ['hero', 'discord', 'roles', 'gallery', 'challenges'] },
-  { section: 'akce',            folders: ['hero', 'workshops', 'events'] },
   { section: 'obchod',          folders: ['hero', 'products', 'bundles', 'membership'] },
-  { section: 'reference',       folders: ['hero', 'reviews', 'gallery'] },
-  { section: 'lektori',         folders: ['hero', 'portraits', 'works'] },
   { section: 'o-nas',           folders: ['hero', 'mission', 'team', 'partners'] },
   { section: 'kontakt',         folders: ['hero', 'icons'] },
 ]
