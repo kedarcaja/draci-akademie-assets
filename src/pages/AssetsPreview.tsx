@@ -6,9 +6,10 @@ import SectionPreview from '../components/SectionPreview'
 
 const folderTree = [
   { section: 'global',          folders: ['logo', 'backgrounds', 'ornaments', 'icons', 'textures'] },
+  { section: 'kampus',          folders: ['mapa', 'budovy', 'hotspots'] },
   { section: 'akademie',        folders: ['hero', 'sections', 'cards'] },
   { section: 'zacni-tady',      folders: ['hero', 'cards', 'sections'] },
-  { section: 'kurzy',           folders: ['hero', 'stezky', 'courses', 'cards'] },
+  { section: 'stezky',          folders: ['hero', 'levels', 'courses'] },
   { section: 'deti-a-rodice',   folders: ['hero', 'age-groups', 'benefits', 'products'] },
   { section: 'skoly-a-ucitele', folders: ['hero', 'workshops', 'materials'] },
   { section: 'komunita',        folders: ['hero', 'discord', 'roles', 'gallery', 'challenges'] },

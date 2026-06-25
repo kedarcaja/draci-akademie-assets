@@ -1,4 +1,5 @@
 import type { Funnel } from '../data/funnels'
+import { funnelStatusColors, funnelStatusLabels } from '../data/funnels'
 
 interface FunnelPreviewProps {
   funnel: Funnel
@@ -9,7 +10,9 @@ export default function FunnelPreview({ funnel }: FunnelPreviewProps) {
     <div className="asset-card flex flex-col p-4 gap-3">
       <div className="flex items-start justify-between gap-2">
         <h3 className="font-cinzel text-brand-parchment font-semibold text-sm leading-tight">{funnel.title}</h3>
-        <span className="tag bg-blue-900/50 text-blue-400 border border-blue-700/40 shrink-0">Trychtýř</span>
+        <span className={`tag shrink-0 ${funnelStatusColors[funnel.status]}`}>
+          {funnelStatusLabels[funnel.status]}
+        </span>
       </div>
 
       <p className="text-brand-text-dim text-xs font-mono">{funnel.slug}</p>

@@ -10,13 +10,13 @@ export default function AssetCard({ asset }: AssetCardProps) {
   const [copied, setCopied] = useState(false)
 
   const copyUrl = () => {
-    navigator.clipboard.writeText(asset.path)
+    navigator.clipboard.writeText(asset.publicUrl)
     setCopied(true)
     setTimeout(() => setCopied(false), 1500)
   }
 
   const copyTag = () => {
-    const tag = `<img\n  src="${asset.path}"\n  alt="${asset.alt}"\n/>`
+    const tag = `<img\n  src="${asset.publicUrl}"\n  alt="${asset.alt}"\n/>`
     navigator.clipboard.writeText(tag)
     setCopied(true)
     setTimeout(() => setCopied(false), 1500)
@@ -27,7 +27,7 @@ export default function AssetCard({ asset }: AssetCardProps) {
       {/* Preview */}
       <div className="relative h-36 bg-brand-darker flex items-center justify-center overflow-hidden">
         <img
-          src={asset.path}
+          src={asset.publicUrl}
           alt={asset.alt}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           onError={(e) => {
@@ -45,7 +45,7 @@ export default function AssetCard({ asset }: AssetCardProps) {
       <div className="p-3 flex flex-col gap-2 flex-1">
         <div>
           <p className="text-brand-parchment text-sm font-medium leading-tight">{asset.name}</p>
-          <p className="text-brand-text-dim text-[10px] mt-0.5 truncate">{asset.path.replace('https://assets.draciakademie.cz/', '')}</p>
+          <p className="text-brand-text-dim text-[10px] mt-0.5 truncate">{asset.publicUrl.replace('https://assets.draciakademie.cz/', '')}</p>
         </div>
 
         {/* Actions */}

@@ -1,19 +1,19 @@
 import { assets } from '../data/assets'
 import { pages } from '../data/pages'
 import { funnels } from '../data/funnels'
+import { campusBuildings } from '../data/campusBuildings'
 
 export default function HomePreview() {
-  const ready       = assets.filter(a => a.status === 'ready').length
-  const placeholder = assets.filter(a => a.status === 'placeholder').length
-  const missing     = assets.filter(a => a.status === 'missing').length
+  const ready  = assets.filter(a => a.status === 'ready').length
+  const missing = assets.filter(a => a.status === 'missing').length
 
   const stats = [
-    { label: 'Assetů celkem',   value: assets.length,  color: 'text-brand-parchment' },
-    { label: 'Připraveno',      value: ready,           color: 'text-green-400' },
-    { label: 'Placeholdery',    value: placeholder,     color: 'text-amber-400' },
-    { label: 'Chybí',           value: missing,         color: 'text-red-400' },
-    { label: 'Webových stránek', value: pages.length,   color: 'text-brand-parchment' },
-    { label: 'Trychtýřů',       value: funnels.length,  color: 'text-blue-400' },
+    { label: 'Budov kampusu',    value: campusBuildings.length, color: 'text-brand-gold' },
+    { label: 'Webových stránek', value: pages.length,           color: 'text-brand-parchment' },
+    { label: 'Trychtýřů',        value: funnels.length,         color: 'text-blue-400' },
+    { label: 'Assetů celkem',    value: assets.length,          color: 'text-brand-parchment' },
+    { label: 'Připraveno',       value: ready,                   color: 'text-green-400' },
+    { label: 'Chybí',            value: missing,                 color: 'text-red-400' },
   ]
 
   return (
